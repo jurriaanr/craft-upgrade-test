@@ -1,0 +1,126 @@
+dateModified: 1575298792
+email:
+  fromEmail: craft@oberon.nl
+  fromName: craftTest
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  0abd16fd-98e5-4fcb-adea-7092183dc329:
+    name: Common
+plugins:
+  route-map:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+sections:
+  6292ebb4-3844-4656-a221-3da12a6acd46:
+    name: 'Test Single'
+    handle: testSingle
+    type: single
+    enableVersioning: true
+    propagationMethod: all
+    siteSettings:
+      2bc686e4-7291-49fc-b162-496e3351b694:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: __home__
+        template: ''
+      8ba5aba2-b414-4035-a5cb-65730813751f:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: __home__
+        template: ''
+    entryTypes:
+      f829fe73-01b1-4002-ad33-5f322acb9b1c:
+        name: 'Test Single'
+        handle: testSingle
+        hasTitleField: false
+        titleLabel: null
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+  c0cf0787-f176-4403-b58f-53cfa8422a13:
+    name: 'Test Structure'
+    handle: testStructure
+    type: structure
+    enableVersioning: true
+    propagationMethod: all
+    siteSettings:
+      2bc686e4-7291-49fc-b162-496e3351b694:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'test-structure/{slug}'
+        template: ''
+      8ba5aba2-b414-4035-a5cb-65730813751f:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'test-structure/{slug}'
+        template: ''
+    structure:
+      uid: 16888b12-c033-4eab-89e5-be8a31f98805
+      maxLevels: 3
+    entryTypes:
+      0da0d4dc-2052-443a-914d-f0205b3e33f2:
+        name: 'Test Structure'
+        handle: testStructure
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: null
+        sortOrder: 1
+  deabc08f-466e-42dc-bcb5-fa1a04e97a23:
+    name: 'Test Channel'
+    handle: testChannel
+    type: channel
+    enableVersioning: true
+    propagationMethod: all
+    siteSettings:
+      2bc686e4-7291-49fc-b162-496e3351b694:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'test-channel/{slug}'
+        template: ''
+      8ba5aba2-b414-4035-a5cb-65730813751f:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'test-channel/{slug}'
+        template: ''
+    entryTypes:
+      f144f196-f234-4291-b9d8-0756dc6cbee6:
+        name: 'Test Channel'
+        handle: testChannel
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: null
+        sortOrder: 1
+siteGroups:
+  35c28f02-3d8b-413e-ac2a-5081bf75b1ab:
+    name: craftTest
+sites:
+  2bc686e4-7291-49fc-b162-496e3351b694:
+    siteGroup: 35c28f02-3d8b-413e-ac2a-5081bf75b1ab
+    name: craftTest
+    handle: default
+    language: en
+    hasUrls: true
+    baseUrl: 'http://$SITE_URL'
+    sortOrder: 1
+    primary: true
+  8ba5aba2-b414-4035-a5cb-65730813751f:
+    siteGroup: 35c28f02-3d8b-413e-ac2a-5081bf75b1ab
+    name: site2
+    handle: site2
+    language: nl
+    hasUrls: true
+    baseUrl: '@web/'
+    sortOrder: 2
+    primary: false
+system:
+  edition: pro
+  name: craftTest
+  live: true
+  schemaVersion: 3.3.3
+  timeZone: America/Los_Angeles
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''

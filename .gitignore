@@ -1,0 +1,28 @@
+/.env
+/.idea
+/vendor
+/node_modules/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log
+/__pycache__
+
+docker-compose.override.yml
+
+.DS_Store
+
+# settings
+.vscode
+.cache
+
+# dependencies
+/node_modules
+/flow-typed
+
+# production
+/build
+
+# downloads
+/web/assets/
+/web/assets
+/web/assets/**/*
