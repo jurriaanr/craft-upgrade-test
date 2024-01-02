@@ -10,7 +10,7 @@ import urllib.request
 dbName = 'craft_update_test'
 dbHost = 'localhost'
 dbUser = 'root'
-dbPass = 's4mb4lb1J'
+dbPass = ''
 adminEmail = "craft@oberon.nl"
 adminName = "admin"
 adminPass = "secret"
